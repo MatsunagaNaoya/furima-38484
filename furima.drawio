@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="q_hy4r506SrOhA8X4yDK" name="ページ1">
-        <mxGraphModel dx="252" dy="572" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="1064" dy="636" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -45,7 +45,7 @@
                         <mxRectangle y="120" width="120" height="26" as="alternateBounds"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="14" value="postal_code (string型,NOT NULL)&#10;&#10;prefecture (string型,NOT NULL)&#10;&#10;city (string型,NOT NULL)&#10;&#10;addresses (string型,NOT NULL)&#10;&#10;building (string型)&#10;&#10;phone_number (string型,NOT NULL)&#10;" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="11" vertex="1">
+                <mxCell id="14" value="postal_code (string型,NOT NULL)&#10;&#10;prefecture_id (integer型,NOT NULL)&#10;&#10;city (string型,NOT NULL)&#10;&#10;addresses (string型,NOT NULL)&#10;&#10;building (string型)&#10;&#10;phone_number (string型,NOT NULL)&#10;" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="11" vertex="1">
                     <mxGeometry y="50" width="300" height="170" as="geometry"/>
                 </mxCell>
                 <mxCell id="12" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;entryX=-0.006;entryY=0.429;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="11" target="5" edge="1">
