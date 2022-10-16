@@ -4,9 +4,8 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-  #  has_many :room_users
-  #  has_many :rooms, through: :room_users
-  #  has_many :messages
+  has_many :items
+
   with_options presence: true do
     validates :nickname, :birth_date
     validates :last_name, :first_name, format: { with: /\A[ぁ-んーァ-ン一-龥々]/ }
