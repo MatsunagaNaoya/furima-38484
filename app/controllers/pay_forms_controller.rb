@@ -1,0 +1,2 @@
+class PayFormsController < ApplicationController
+end
