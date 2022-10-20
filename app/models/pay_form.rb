@@ -1,0 +1,2 @@
+class PayForm < ApplicationRecord
+end
