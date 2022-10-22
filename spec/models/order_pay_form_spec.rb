@@ -59,10 +59,25 @@ RSpec.describe OrderPayForm, type: :model do
       @order_pay_form.valid?
       expect(@order_pay_form.errors.full_messages).to include('Phone number is invalid')
     end
+    it 'phone_numberが英数混合では登録できない' do
+      @order_pay_form.phone_number = '012o-21090'
+      @order_pay_form.valid?
+      expect(@order_pay_form.errors.full_messages).to include('Phone number is invalid')
+    end
     it 'tokenが空では登録できないこと' do
       @order_pay_form.token = nil
       @order_pay_form.valid?
       expect(@order_pay_form.errors.full_messages).to include("Token can't be blank")
+    end
+    it 'user_idが無いと購入できない' do
+      @order_pay_form.user_id = ''
+      @order_pay_form.valid?
+      expect(@order_pay_form.errors.full_messages).to include("User can't be blank")
+    end
+    it 'item_idが無いと購入できない' do
+      @order_pay_form.item_id = ''
+      @order_pay_form.valid?
+      expect(@order_pay_form.errors.full_messages).to include("Item can't be blank")
     end
   end
 end

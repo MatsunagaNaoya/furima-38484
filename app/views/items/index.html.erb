@@ -121,13 +121,12 @@
   <%# /FURIMAの特徴 %>
 
   <div class='item-contents'>
-  <% if @items.present? %>
     <h2 class='title'>ピックアップカテゴリー</h2>
     <div class="subtitle" >
       新規投稿商品
     </div>
     <ul class='item-lists'>
-
+    <% if @items.present? %>
       <% @items.each do |item| %>
         <li class='list'>
           <%= link_to item_path(item.id) do %>
