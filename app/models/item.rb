@@ -8,7 +8,7 @@ class Item < ApplicationRecord
   belongs_to :prefecture
   belongs_to :scheduled_delivery
   has_one :order
-  
+
   with_options presence: true do
     validates :image, :name, :info
     validates :price, numericality: { only_integer: true,
