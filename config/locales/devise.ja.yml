@@ -2,12 +2,6 @@ ja:
   activerecord:
     attributes:
       user:
-        nickname: ニックネーム
-        birth_date: 生年月日
-        last_name: 苗字
-        first_name: 名前
-        last_name_kana: 苗字カナ
-        first_name_kana: 名前カナ
         confirmation_sent_at: パスワード確認送信時刻
         confirmation_token: パスワード確認用トークン
         confirmed_at: パスワード確認時刻
