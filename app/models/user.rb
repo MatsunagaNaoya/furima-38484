@@ -9,8 +9,8 @@ class User < ApplicationRecord
 
   with_options presence: true do
     validates :nickname, :birth_date
-    validates :last_name, :first_name, format: { with: /\A[ぁ-んーァ-ン一-龥々]/ }
-    validates :last_name_kana, :first_name_kana, format: { with: /\A[ァ-ヶー－]+\z/ }
+    validates :last_name, :first_name, format: { with: /\A[ぁ-んーァ-ン一-龥々]/, message: 'は日本語で入力してください' }
+    validates :last_name_kana, :first_name_kana, format: { with: /\A[ァ-ヶー－]+\z/, message: 'はカタカナで入力してください' }
   end
   validates :password, :password_confirmation, format: { with: /\A(?=.*?[a-z])(?=.*?\d)[a-z\d]+\z/i }
 end
