@@ -21,47 +21,47 @@ RSpec.describe Item, type: :model do
       it 'imageが空では登録できない' do
         @item.image = nil
         @item.valid?
-        expect(@item.errors.full_messages).to include("画像を入力してください")
+        expect(@item.errors.full_messages).to include('画像を入力してください')
       end
       it 'nameが空では登録できない' do
         @item.name = ''
         @item.valid?
-        expect(@item.errors.full_messages).to include("商品名を入力してください")
+        expect(@item.errors.full_messages).to include('商品名を入力してください')
       end
       it 'infoが空では登録できない' do
         @item.info = ''
         @item.valid?
-        expect(@item.errors.full_messages).to include("商品の説明を入力してください")
+        expect(@item.errors.full_messages).to include('商品の説明を入力してください')
       end
       it 'category_idが1番では登録できない' do
         @item.category_id = 1
         @item.valid?
-        expect(@item.errors.full_messages).to include("カテゴリーを選択してください")
+        expect(@item.errors.full_messages).to include('カテゴリーを選択してください')
       end
       it 'sales_status_idが1番では登録できない' do
         @item.sales_status_id = 1
         @item.valid?
-        expect(@item.errors.full_messages).to include("商品の状態を選択してください")
+        expect(@item.errors.full_messages).to include('商品の状態を選択してください')
       end
       it 'shipping_fee_status_idが1番では登録できない' do
         @item.shipping_fee_status_id = 1
         @item.valid?
-        expect(@item.errors.full_messages).to include("配送料の負担を選択してください")
+        expect(@item.errors.full_messages).to include('配送料の負担を選択してください')
       end
       it 'Prefecture_idが1番では登録できない' do
         @item.prefecture_id = 1
         @item.valid?
-        expect(@item.errors.full_messages).to include("発送元の地域を選択してください")
+        expect(@item.errors.full_messages).to include('発送元の地域を選択してください')
       end
       it 'scheduled_delivery_idが1番では登録できない' do
         @item.scheduled_delivery_id = 1
         @item.valid?
-        expect(@item.errors.full_messages).to include("発送までの日数を選択してください")
+        expect(@item.errors.full_messages).to include('発送までの日数を選択してください')
       end
       it 'priceが空では登録できない' do
         @item.price = ''
         @item.valid?
-        expect(@item.errors.full_messages).to include("価格を入力してください")
+        expect(@item.errors.full_messages).to include('価格を入力してください')
       end
       it 'priceが全角数字では登録できない' do
         @item.price = '１０００'
